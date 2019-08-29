@@ -1,3 +1,5 @@
+# Papers List
+
 * ### Towards Secure and Decentralized Sharing of IoT Data by Hien Thi Thu Truong, Miguel Almeida, Ghassan Karame, Claudio Soriente
 
   * Abstract: The Internet of Things (IoT) bears unprecedented security and scalability
