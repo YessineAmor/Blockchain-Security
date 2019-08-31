@@ -1,6 +1,7 @@
 # Papers List
 
 * ### [Ethereum papers](ethereum/)
+* ### [Hyperledger papers](hyperledger/)
 
 * ### Towards Blockchain'enabled Searchable Encryption by Qiang Tang
 
