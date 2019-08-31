@@ -579,3 +579,360 @@ limitations of existing offline vulnerability analysis tools.
   * Arxiv: http://arxiv.org/abs/1812.05934v1
 
 
+* ### SOC: hunting the underground inside story of the ethereum Social'network Opinion and Comment by TonTon Hsien'De Huang, Po'Wei Hong, Ying'Tse Lee, Yi'Lun Wang, Chi'Leong Lok, Hung'Yu Kao
+
+  * Abstract: The cryptocurrency is attracting more and more attention because of the
+blockchain technology. Ethereum is gaining a significant popularity in
+blockchain community, mainly due to the fact that it is designed in a way that
+enables developers to write smart contracts and decentralized applications
+(Dapps). There are many kinds of cryptocurrency information on the social
+network. The risks and fraud problems behind it have pushed many countries
+including the United States, South Korea, and China to make warnings and set up
+corresponding regulations. However, the security of Ethereum smart contracts
+has not gained much attention. Through the Deep Learning approach, we propose a
+method of sentiment analysis for Ethereum's community comments. In this
+research, we first collected the users' cryptocurrency comments from the social
+network and then fed to our LSTM + CNN model for training. Then we made
+prediction through sentiment analysis. With our research result, we have
+demonstrated that both the precision and the recall of sentiment analysis can
+achieve 0.80+. More importantly, we deploy our sentiment analysis1 on
+RatingToken and Coin Master (mobile application of Cheetah Mobile Blockchain
+Security Center23). We can effectively provide detail information to resolve
+the risks of being fake and fraud problems.
+
+  * Publication date: 2018-11-27T17:54:12Z
+
+  * Arxiv: http://arxiv.org/abs/1811.11136v1
+
+
+* ### EASYFLOW: Keep Ethereum Away From Overflow by Jianbo Gao, Han Liu, Chao Liu, Qingshan Li, Zhi Guan, Zhong Chen
+
+  * Abstract: While Ethereum smart contracts enabled a wide range of blockchain
+applications, they are extremely vulnerable to different forms of security
+attacks. Due to the fact that transactions to smart contracts commonly involve
+cryptocurrency transfer, any successful attacks can lead to money loss or even
+financial disorder. In this paper, we focus on the overflow attacks in Ethereum
+, mainly because they widely rooted in many smart contracts and comparatively
+easy to exploit. We have developed EASYFLOW , an overflow detector at Ethereum
+Virtual Machine level. The key insight behind EASYFLOW is a taint analysis
+based tracking technique to analyze the propagation of involved taints.
+Specifically, EASYFLOW can not only divide smart contracts into safe contracts,
+manifested overflows, well-protected overflows and potential overflows, but
+also automatically generate transactions to trigger potential overflows. In our
+preliminary evaluation, EASYFLOW managed to find potentially vulnerable
+Ethereum contracts with little runtime overhead.
+
+  * Publication date: 2018-11-09T08:27:37Z
+
+  * Arxiv: http://arxiv.org/abs/1811.03814v2
+
+
+* ### Blockchain based Proxy Re'Encryption Scheme for Secure IoT Data Sharing by Ahsan Manzoor, Madhsanka Liyanage, An Braeken, Salil S. Kanhere, Mika Ylianttila
+
+  * Abstract: Data is central to the Internet of Things (IoT) ecosystem. Most of the
+current IoT systems are using centralized cloud-based data sharing systems,
+which will be difficult to scale up to meet the demands of future IoT systems.
+Involvement of such third-party service provider requires also trust from both
+sensor owner and sensor data user. Moreover, the fees need to be paid for their
+services. To tackle both the scalability and trust issues and to automatize the
+payments, this paper presents a blockchain based proxy re-encryption scheme.
+The system stores the IoT data in a distributed cloud after encryption. To
+share the collected IoT data, the system establishes runtime dynamic smart
+contracts between the sensor and data user without the involvement of a trusted
+third party. It also uses a very efficient proxy re-encryption scheme which
+allows that the data is only visible by the owner and the person present in the
+smart contract. This novel combination of smart contracts with proxy
+re-encryption provides an efficient, fast and secure platform for storing,
+trading and managing of sensor data. The proposed system is implemented in an
+Ethereum based testbed to analyze the performance and the security properties.
+
+  * Publication date: 2018-11-06T10:46:42Z
+
+  * Arxiv: http://arxiv.org/abs/1811.02276v2
+
+
+* ### Exploiting The Laws of Order in Smart Contracts by Aashish Kolluri, Ivica Nikolic, Ilya Sergey, Aquinas Hobor, Prateek Saxena
+
+  * Abstract: We investigate a family of bugs in blockchain-based smart contracts, which we
+call event-ordering (or EO) bugs. These bugs are intimately related to the
+dynamic ordering of contract events, i.e., calls of its functions on the
+blockchain, and enable potential exploits of millions of USD worth of Ether.
+Known examples of such bugs and prior techniques to detect them have been
+restricted to a small number of event orderings, typicall 1 or 2. Our work
+provides a new formulation of this general class of EO bugs as finding
+concurrency properties arising in long permutations of such events. The
+technical challenge in detecting our formulation of EO bugs is the inherent
+combinatorial blowup in path and state space analysis, even for simple
+contracts. We propose the first use of partial-order reduction techniques,
+using happen-before relations extracted automatically for contracts, along with
+several other optimizations built on a dynamic symbolic execution technique. We
+build an automatic tool called ETHRACER that requires no hints from users and
+runs directly on Ethereum bytecode. It flags 7-11% of over ten thousand
+contracts analyzed in roughly 18.5 minutes per contract, providing compact
+event traces that human analysts can run as witnesses. These witnesses are so
+compact that confirmations require only a few minutes of human effort. Half of
+the flagged contracts have subtle EO bugs, including in ERC-20 contracts that
+carry hundreds of millions of dollars worth of Ether. Thus, ETHRACER is
+effective at detecting a subtle yet dangerous class of bugs which existing
+tools miss.
+
+  * Publication date: 2018-10-27T06:41:38Z
+
+  * Arxiv: http://arxiv.org/abs/1810.11605v1
+
+
+* ### Vandal: A Scalable Security Analysis Framework for Smart Contracts by Lexi Brent, Anton Jurisevic, Michael Kong, Eric Liu, Francois Gauthier, Vincent Gramoli, Ralph Holz, Bernhard Scholz
+
+  * Abstract: The rise of modern blockchains has facilitated the emergence of smart
+contracts: autonomous programs that live and run on the blockchain. Smart
+contracts have seen a rapid climb to prominence, with applications predicted in
+law, business, commerce, and governance.
+  Smart contracts are commonly written in a high-level language such as
+Ethereum's Solidity, and translated to compact low-level bytecode for
+deployment on the blockchain. Once deployed, the bytecode is autonomously
+executed, usually by a %Turing-complete virtual machine. As with all programs,
+smart contracts can be highly vulnerable to malicious attacks due to deficient
+programming methodologies, languages, and toolchains, including buggy
+compilers. At the same time, smart contracts are also high-value targets, often
+commanding large amounts of cryptocurrency. Hence, developers and auditors need
+security frameworks capable of analysing low-level bytecode to detect potential
+security vulnerabilities.
+  In this paper, we present Vandal: a security analysis framework for Ethereum
+smart contracts. Vandal consists of an analysis pipeline that converts
+low-level Ethereum Virtual Machine (EVM) bytecode to semantic logic relations.
+Users of the framework can express security analyses in a declarative fashion:
+a security analysis is expressed in a logic specification written in the
+\souffle language. We conduct a large-scale empirical study for a set of common
+smart contract security vulnerabilities, and show the effectiveness and
+efficiency of Vandal. Vandal is both fast and robust, successfully analysing
+over 95\% of all 141k unique contracts with an average runtime of 4.15 seconds;
+outperforming the current state of the art tools---Oyente, EthIR, Mythril, and
+Rattle---under equivalent conditions.
+
+  * Publication date: 2018-09-11T15:39:35Z
+
+  * Arxiv: http://arxiv.org/abs/1809.03981v1
+
+
+* ### Empirical Vulnerability Analysis of Automated Smart Contracts Security Testing on Blockchains by Reza M. Parizi, Ali Dehghantanha, Kim'Kwang Raymond Choo, Amritraj Singh
+
+  * Abstract: The emerging blockchain technology supports decentralized computing paradigm
+shift and is a rapidly approaching phenomenon. While blockchain is thought
+primarily as the basis of Bitcoin, its application has grown far beyond
+cryptocurrencies due to the introduction of smart contracts. Smart contracts
+are self-enforcing pieces of software, which reside and run over a hosting
+blockchain. Using blockchain-based smart contracts for secure and transparent
+management to govern interactions (authentication, connection, and transaction)
+in Internet-enabled environments, mostly IoT, is a niche area of research and
+practice. However, writing trustworthy and safe smart contracts can be
+tremendously challenging because of the complicated semantics of underlying
+domain-specific languages and its testability. There have been high-profile
+incidents that indicate blockchain smart contracts could contain various
+code-security vulnerabilities, instigating financial harms. When it involves
+security of smart contracts, developers embracing the ability to write the
+contracts should be capable of testing their code, for diagnosing security
+vulnerabilities, before deploying them to the immutable environments on
+blockchains. However, there are only a handful of security testing tools for
+smart contracts. This implies that the existing research on automatic smart
+contracts security testing is not adequate and remains in a very stage of
+infancy. With a specific goal to more readily realize the application of
+blockchain smart contracts in security and privacy, we should first understand
+their vulnerabilities before widespread implementation. Accordingly, the goal
+of this paper is to carry out a far-reaching experimental assessment of current
+static smart contracts security testing tools, for the most widely used
+blockchain, the Ethereum and its domain-specific programming language, Solidity
+to provide the first...
+
+  * Publication date: 2018-09-07T22:39:49Z
+
+  * Arxiv: http://arxiv.org/abs/1809.02702v1
+
+
+* ### Bicomp: A Bilayer Scalable Nakamoto Consensus Protocol by Zhenzhen Jiao, Rui Tian, Dezhong Shang, Hui Ding
+
+  * Abstract: Blockchain has received great attention in recent years and motivated
+innovations in different scenarios. However, many vital issues which affect its
+performance are still open. For example, it is widely convinced that high level
+of security and scalability and full decentralization are still impossible to
+achieve simultaneously. In this paper, we propose Bicomp, a bilayer scalable
+Nakamoto consensus protocol, which is an approach based on high security and
+pure decentralized Nakamoto consensus, and with a significant improvement on
+scalability. In Bicomp, two kinds of blocks are generated, i.e., microblocks
+for concurrent transaction packaging in network, and macroblocks for leadership
+competition and chain formation. A leader is elected at beginning of each round
+by using a macroblock header from proof-of-work. An elected leader then
+receives and packages multiple microblocks mined by different nodes into one
+macroblock during its tenure, which results in a bilayer block structure. Such
+design limits a leader's power and encourages as many nodes as possible to
+participate in the process of packaging transactions, which promotes the
+sharding nature of the system. Furthermore, several mechanisms are carefully
+designed to reduce transaction overlapping and further limit a leader's power,
+among which a novel transaction diversity based metric is proposed as the
+second level criteria besides the longest-chain-first principle on selecting a
+legitimate chain when fork happens. Security issues and potential attacks to
+Bicomp are extensively discussed and experiments for evaluation are performed.
+From the experimental results based on 50 nodes all over the world, Bicomp
+achieves significant improvement on scalability than that of Bitcoin and
+Ethereum, while the security and decentralization merits are still preserved.
+
+  * Publication date: 2018-09-05T16:06:49Z
+
+  * Arxiv: http://arxiv.org/abs/1809.01593v1
+
+
+* ### ContractFuzzer: Fuzzing Smart Contracts for Vulnerability Detection by Bo Jiang, Ye Liu, W. K. Chan
+
+  * Abstract: Decentralized cryptocurrencies feature the use of blockchain to transfer
+values among peers on networks without central agency. Smart contracts are
+programs running on top of the blockchain consensus protocol to enable people
+make agreements while minimizing trusts. Millions of smart contracts have been
+deployed in various decentralized applications. The security vulnerabilities
+within those smart contracts pose significant threats to their applications.
+Indeed, many critical security vulnerabilities within smart contracts on
+Ethereum platform have caused huge financial losses to their users. In this
+work, we present ContractFuzzer, a novel fuzzer to test Ethereum smart
+contracts for security vulnerabilities. ContractFuzzer generates fuzzing inputs
+based on the ABI specifications of smart contracts, defines test oracles to
+detect security vulnerabilities, instruments the EVM to log smart contracts
+runtime behaviors, and analyzes these logs to report security vulnerabilities.
+Our fuzzing of 6991 smart contracts has flagged more than 459 vulnerabilities
+with high precision. In particular, our fuzzing tool successfully detects the
+vulnerability of the DAO contract that leads to USD 60 million loss and the
+vulnerabilities of Parity Wallet that have led to the loss of  million and
+the freezing of USD 150 million worth of Ether.
+
+  * Publication date: 2018-07-11T02:32:54Z
+
+  * Arxiv: http://arxiv.org/abs/1807.03932v2
+
+
+* ### Design Patterns which Facilitate Message Digest Collision Attacks on Blockchains by Peter Robinson
+
+  * Abstract: Message digest algorithms are one of the underlying building blocks of
+blockchain platforms such as Ethereum. This paper analyses situations in which
+the message digest collision resistance property can be exploited by attackers.
+Two mitigations for possible attacks are described: longer message digest sizes
+make attacks more difficult; and, including timeliness properties limits the
+amount of time an attacker has to determine a hash collision.
+
+  * Publication date: 2018-06-15T06:27:43Z
+
+  * Arxiv: http://arxiv.org/abs/1806.05822v1
+
+
+* ### A Memo on the Proof'of'Stake Mechanism by George Gui, Ali Hortacsu, Jose Tudon
+
+  * Abstract: We analyze the economic incentives generated by the proof-of-stake mechanism
+discussed in the Ethereum Casper upgrade proposal. Compared with proof-of-work,
+proof-of-stake has a different cost structure for attackers. In Budish (2018),
+three equations characterize the limits of Bitcoin, which has a proof-of-work
+mechanism. We investigate their counterparts and evaluate the risk of
+double-spending attack and sabotage attack. We argue that PoS is safer than PoW
+agaisnt double-spending attack because of the tractability of attackers, which
+implies a large stock cost for the attacker. Compared to a PoW system whose
+mining equipments are repurposable, PoS is also safer against a sabotage
+attack.
+
+  * Publication date: 2018-06-14T00:17:02Z
+
+  * Arxiv: http://arxiv.org/abs/1807.09626v1
+
+
+* ### Securify: Practical Security Analysis of Smart Contracts by Petar Tsankov, Andrei Dan, Dana Drachsler Cohen, Arthur Gervais, Florian Buenzli, Martin Vechev
+
+  * Abstract: Permissionless blockchains allow the execution of arbitrary programs (called
+smart contracts), enabling mutually untrusted entities to interact without
+relying on trusted third parties. Despite their potential, repeated security
+concerns have shaken the trust in handling billions of USD by smart contracts.
+  To address this problem, we present Securify, a security analyzer for
+Ethereum smart contracts that is scalable, fully automated, and able to prove
+contract behaviors as safe/unsafe with respect to a given property. Securify's
+analysis consists of two steps. First, it symbolically analyzes the contract's
+dependency graph to extract precise semantic information from the code. Then,
+it checks compliance and violation patterns that capture sufficient conditions
+for proving if a property holds or not. To enable extensibility, all patterns
+are specified in a designated domain-specific language.
+  Securify is publicly released, it has analyzed >18K contracts submitted by
+its users, and is regularly used to conduct security audits by experts. We
+present an extensive evaluation of Securify over real-world Ethereum smart
+contracts and demonstrate that it can effectively prove the correctness of
+smart contracts and discover critical violations.
+
+  * Publication date: 2018-06-04T14:21:21Z
+
+  * Arxiv: http://arxiv.org/abs/1806.01143v2
+
+
+* ### Smart Contract'Based Access Control for the Internet of Things by Yuanyu Zhang, Shoji Kasahara, Yulong Shen, Xiaohong Jiang, Jianxiong Wan
+
+  * Abstract: This paper investigates a critical access control issue in the Internet of
+Things (IoT). In particular, we propose a smart contract-based framework, which
+consists of multiple access control contracts (ACCs), one judge contract (JC)
+and one register contract (RC), to achieve distributed and trustworthy access
+control for IoT systems. Each ACC provides one access control method for a
+subject-object pair, and implements both static access right validation based
+on predefined policies and dynamic access right validation by checking the
+behavior of the subject. The JC implements a misbehavior-judging method to
+facilitate the dynamic validation of the ACCs by receiving misbehavior reports
+from the ACCs, judging the misbehavior and returning the corresponding penalty.
+The RC registers the information of the access control and misbehavior-judging
+methods as well as their smart contracts, and also provides functions (e.g.,
+register, update and delete) to manage these methods. To demonstrate the
+application of the framework, we provide a case study in an IoT system with one
+desktop computer, one laptop and two Raspberry Pi single-board computers, where
+the ACCs, JC and RC are implemented based on the Ethereum smart contract
+platform to achieve the access control.
+
+  * Publication date: 2018-02-13T00:42:31Z
+
+  * Arxiv: http://arxiv.org/abs/1802.04410v1
+
+
+* ### Securing the Assets of Decentralized Applications using Financial Derivatives (DRAFT) by George Bissias, Brian Levine, Nikunj Kapadia
+
+  * Abstract: Ethereum contracts can be designed to function as fully decentralized
+applications called DAPPs. Many DAPPs have already been fielded, including an
+online marketplace, a role playing game, a prediction market, and an Internet
+service provider. Unfortunately, DAPPs can be hacked, and the assets they
+control can be stolen. A recent attack on an Ethereum decentralized application
+called The DAO demonstrated that smart contract bugs are more than an academic
+concern. Ether worth tens of millions of US dollars was extracted by an
+attacker from The DAO, sending the value of its tokens and the overall exchange
+price of ether tumbling.
+  We present a market-based technique for insuring the ether holdings of a DAPP
+using futures contracts indexed by the trade price of ether for DAPP tokens.
+Under fairly general circumstances, our technique is capable of recovering the
+majority of ether lost from theft with high probability even when all of the
+ether holdings are stolen; and the only cost to DAPP token holders is an
+adjustable ether withdrawal fee. If the probability of a margin call in $
+days is $ for a futures contract with 20 times leverage, then our approach
+will allow for the recovery of half the stolen ether with probability $ and a
+withdrawal fee of 5%. A higher withdrawal fee of 25% allows for more than 80%
+of the ether to be recovered with probability $.
+
+  * Publication date: 2017-01-14T16:35:03Z
+
+  * Arxiv: http://arxiv.org/abs/1701.03945v1
+
+
+* ### The Balance Attack Against Proof'Of'Work Blockchains: The R3 Testbed as an Example by Christopher Natoli, Vincent Gramoli
+
+  * Abstract: In this paper, we identify a new form of attack, called the Balance attack,
+against proof-of-work blockchain systems. The novelty of this attack consists
+of delaying network communications between multiple subgroups of nodes with
+balanced mining power. Our theoretical analysis captures the precise tradeoff
+between the network delay and the mining power of the attacker needed to double
+spend in Ethereum with high probability.
+  We quantify our probabilistic analysis with statistics taken from the R3
+consortium, and show that a single machine needs 20 minutes to attack the
+consortium. Finally, we run an Ethereum private chain in a distributed system
+with similar settings as R3 to demonstrate the feasibility of the approach, and
+discuss the application of the Balance attack to Bitcoin. Our results clearly
+confirm that main proof-of-work blockchain protocols can be badly suited for
+consortium blockchains.
+
+  * Publication date: 2016-12-30T09:08:10Z
+
+  * Arxiv: http://arxiv.org/abs/1612.09426v1
+
+
